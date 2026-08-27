@@ -97,4 +97,4 @@ kubectl get job -n nginx
 kubectl get pod -n nginx -o wide
 
 ```
-![job.yml](/K8s-log/27-8-Kind/jobs.png)
+![job.yml](/jobs.png)
