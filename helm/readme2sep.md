@@ -1,6 +1,6 @@
 # Daily Learning: Deploying Prometheus & Grafana with Helm
 
-Today sep 3,4,7, Started with the uderstanding of the obserrvability concepts and I continued my **observability and monitoring learning** by getting hands-on with **Prometheus and Grafana** in a Kubernetes environment.
+Today sep 2, Started with the uderstanding of the obserrvability concepts and I continued my **observability and monitoring learning** by getting hands-on with **Prometheus and Grafana** in a Kubernetes environment.
 
 ### Prometheus Installation
 
