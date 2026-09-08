@@ -1,0 +1,16 @@
+## configure exporter here
+mysql:
+  host: "mysql.database-monitoring.svc.cluster.local"
+  port: 3306
+  user: "mysqluser"
+  existingPasswordSecret:
+    name: "mysql-secret"
+    key: "MYSQL_PASSWORD"
+
+serviceMonitor:
+  enabled: true
+  interval: 38s
+  scrapeTimeout: 10s
+  additionalLabels:
+    release: prometheus
+
