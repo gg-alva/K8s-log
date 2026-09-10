@@ -23,3 +23,7 @@ Today, I continued exploring **observability and monitoring**, focusing on creat
 * Learned how Prometheus scrapes metrics from configured targets.
 * Understood how exposed application metrics are collected and stored as time-series data.
 * Explored how these metrics can be queried using PromQL and visualized through Grafana.
+
+* Learned how Prometheus exporters expose metrics from external systems.
+* Explored exporters for databases such as **MySQL and PostgreSQL**.
+* Understood how exporters help collect database metrics and make them available for monitoring through Prometheus.
