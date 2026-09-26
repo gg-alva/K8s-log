@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bad-deployment
+  namespace: cron
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: report-gen
+  template:
+    metadata:
+      labels:
+        app: report-gen
+    spec:
+      containers:
+        - name: report
+          image: busybok:1.36
+          command: ["sh", "-c", "echo Generating report; sleep 10"]
