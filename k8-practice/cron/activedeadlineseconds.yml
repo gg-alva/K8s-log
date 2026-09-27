@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: Job
+
+metadata:
+  name: completion-job
+  namespace: cron
+
+spec:
+  activeDeadlineSeconds: 20
+  backoffLimit: 5
+
+  template:
+    spec:
+      restartPolicy: Never
+
+      containers:
+        - name: struk-task
+          image: busybox:1.36
+          command:
+            - sh
+            - -c
+            - |
+              echo "Task Started will....begin"
+              sleep 30
+              echo "Work completed! $(hostname)!!"
